@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>COCINAMER | ALMENDRALEJO</title>
+
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 
   <style>
 
@@ -15,6 +25,9 @@
       scroll-behavior: smooth;
     }
 
+
+    /* CUERPO */
+
     body {
       font-family: 'Montserrat', Arial, Helvetica, sans-serif;
       color: #111;
@@ -22,548 +35,944 @@
       line-height: 1.6;
     }
 
+
+    /* PÁRRAFOS DE PRESENTACIÓN */
+
     .intro > p {
       font-family: 'Lora', Georgia, serif;
       font-weight: 400;
+      font-size: 18px;
+      line-height: 1.8;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
+
+    /* IMÁGENES */
+
+    .raciones-imagen,
+    .tarifa-imagen,
+    .menu-imagen {
+
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+
+    }
+
+
+    /* CABECERA */
 
     header {
-      background: #001923;
+
       height: 115px;
+      background: #001923;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 40px;
+
+      padding: 0 15%;
+
       position: sticky;
       top: 0;
+
       z-index: 1000;
+
     }
+
+
+    /* LOGO */
+
+    .logo {
+
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+
+      flex-shrink: 0;
+
+    }
+
 
     .logo img {
-      height: 85px;
+
+      height: 100px;
       width: auto;
+
+      max-width: 220px;
+
+      object-fit: contain;
+
       display: block;
+
     }
+
+
+    /* NAVEGACIÓN */
 
     nav {
+
       display: flex;
       align-items: center;
-      gap: 30px;
+
+      gap: 65px;
+
     }
+
 
     nav a {
+
       color: white;
+
       text-decoration: none;
-      font-weight: bold;
-      font-size: 15px;
+
+      font-size: 20px;
+
       transition: 0.3s;
+
     }
+
 
     nav a:hover {
-      color: #25D366;
+
+      color: #d7c28b;
+
     }
 
-    .redes-header {
+
+    /* REDES */
+
+    .social {
+
       display: flex;
-      align-items: center;
-      gap: 12px;
+
+      gap: 15px;
+
     }
 
-    .redes-header a {
+
+    .social a {
+
+      background: white;
+
+      color: #001923;
+
+      width: 40px;
+      height: 40px;
+
+      border-radius: 5px;
+
       display: flex;
-      align-items: center;
+
       justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
     }
 
-    .redes-header img {
-      width: 32px;
-      height: 32px;
+
+    .social img {
+
+      width: 22px;
+      height: 22px;
+
       object-fit: contain;
+
+      display: block;
+
     }
 
-    /* =========================
-       HERO
-    ========================= */
+
+    /* PORTADA */
 
     .hero {
-      min-height: 650px;
+
+      width: 100%;
+
+      height: 180px;
+
+      min-height: 180px;
+
       background-image:
-        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+
+        linear-gradient(
+          rgba(255,255,255,.25),
+          rgba(255,255,255,.25)
+        ),
+
         url("https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/46f62bbd59e93ca96913ce768bfab638b6323256/Banner%20principal.png");
-      background-size: cover;
+
       background-position: center;
+
+      background-size: cover;
+
+      background-repeat: no-repeat;
+
       display: flex;
-      align-items: center;
+
       justify-content: center;
+      align-items: center;
+
       text-align: center;
+
       padding: 40px 20px;
+
     }
 
-    .hero-contenido {
-      color: white;
-      max-width: 1000px;
-    }
 
     .hero h1 {
-      font-size: 48px;
-      line-height: 1.2;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+
+      font-size: 35px;
+
+      font-weight: 500;
+
+      margin-bottom: 10px;
+
+      text-transform: uppercase;
+
     }
+
 
     .hero p {
-      font-size: 24px;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+
+      font-size: 25px;
+
+      font-weight: 500;
+
     }
 
-    /* =========================
-       SECCIONES
-    ========================= */
+
+    /* SECCIONES */
 
     section {
-      padding: 80px 20px;
-    }
 
-    .contenedor {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+      padding: 40px 15%;
 
-    h2 {
       text-align: center;
-      font-size: 36px;
-      margin-bottom: 40px;
-      color: #001923;
+
     }
 
-    /* =========================
-       INTRODUCCIÓN
-    ========================= */
+
+    section h2 {
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      font-size: 38px;
+
+      font-weight: 500;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    section p {
+
+      font-size: 19px;
+
+      max-width: 1050px;
+
+      margin: 0 auto 25px;
+
+    }
+
 
     .intro {
-      text-align: center;
-      max-width: 900px;
-      margin: 0 auto;
+
+      padding-bottom: 35px;
+
     }
 
-    .intro > p {
-      font-size: 19px;
-      margin-bottom: 20px;
+
+    /* COMO FUNCIONA */
+
+    .steps {
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 15px;
+
+      margin-top: 45px;
+
+      flex-wrap: wrap;
+
     }
 
-    /* =========================
-       MENÚ
-    ========================= */
+
+    .step {
+
+      width: 220px;
+
+      padding: 15px;
+
+    }
+
+
+    .number {
+
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+
+      background: #001923;
+
+      color: #d7c28b;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin: 0 auto 15px;
+
+      font-size: 22px;
+
+      font-weight: bold;
+
+    }
+
+
+    .step h3 {
+
+      margin-bottom: 10px;
+
+      font-size: 21px;
+
+    }
+
+
+    .step p {
+
+      font-family: 'Lora', Georgia, serif;
+
+      font-size: 16px;
+
+      font-weight: 400;
+
+      line-height: 1.6;
+
+    }
+
+
+    /* MENÚ */
 
     #menu {
-      background: #f6f6f6;
-    }
 
-    .menu-imagen {
-      display: block;
-      width: 100%;
-      max-width: 1000px;
-      height: auto;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.12);
-    }
-
-    /* =========================
-       PLATOS
-    ========================= */
-
-    .platos {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 35px;
-      margin-top: 40px;
-    }
-
-    .plato {
       background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      color: #111;
+
     }
 
-    .plato:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    /* RACIONES */
+
+    .dishes {
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 15px;
+
+      margin-top: 40px;
+
+      margin-left: 5%;
+
+      margin-right: 5%;
+
     }
 
-    .plato img {
+
+    .dish {
+
+      background: white;
+
+      border: 1px solid #eee;
+
+      padding-bottom: 20px;
+
+      height: 100%;
+
+    }
+
+
+    .dish img {
+
       width: 100%;
-      height: 280px;
+
+      height: 220px;
+
       object-fit: cover;
+
       display: block;
+
     }
 
-    .plato-contenido {
-      padding: 25px;
+
+    .dish h3 {
+
+      font-size: 22px;
+
+      margin-top: 15px;
+
+      min-height: 52px;
+
+      text-align: center;
+
     }
 
-    .plato h3 {
-      color: #001923;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
 
-    .plato p {
+    .dish p {
+
       font-family: 'Lora', Georgia, serif;
-      font-size: 17px;
-      color: #444;
+
+      font-size: 16px;
+
+      font-weight: 400;
+
+      line-height: 1.6;
+
+      padding: 0 15px;
+
+      margin-top: 5px;
+
+      text-align: center;
+
     }
 
-    /* =========================
-       TARIFA
-    ========================= */
+
+    /* TARIFA */
 
     #tarifa {
-      background: #001923;
+
+      background: #f5f3ee;
+
     }
+
 
     #tarifa h2 {
+
       color: white;
+
     }
 
-    .tarifa-imagen {
-      display: block;
-      width: 100%;
-      max-width: 900px;
-      height: auto;
-      margin: 0 auto;
-      border-radius: 10px;
+
+    .price-box {
+
+      max-width: 600px;
+
+      margin: 40px auto 0;
+
+      background: white;
+
+      color: #111;
+
+      padding: 35px;
+
+      border-radius: 5px;
+
     }
 
-    /* =========================
-       RACIONES
-    ========================= */
 
-    #raciones {
-      background: #f6f6f6;
-    }
+    .price-row {
 
-    .raciones-imagen {
-      display: block;
-      width: 100%;
-      max-width: 900px;
-      height: auto;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-    }
-
-    /* =========================
-       CONTACTO
-    ========================= */
-
-    #contacto {
-      text-align: center;
-    }
-
-    .contacto-info {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .contacto-info p {
-      font-size: 19px;
-      margin-bottom: 15px;
-    }
-
-    .contacto-info a {
-      color: #001923;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .contacto-info a:hover {
-      text-decoration: underline;
-    }
-
-    .botones-contacto {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      margin-top: 25px;
-      flex-wrap: wrap;
+
+      justify-content: space-between;
+
+      padding: 18px 0;
+
+      border-bottom: 1px solid #ddd;
+
+      font-size: 19px;
+
     }
 
-    .boton-telefono,
-    .boton-whatsapp {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 24px;
-      border-radius: 6px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+
+    .price-row:last-child {
+
+      border-bottom: none;
+
     }
+
+
+    .price-row strong {
+
+      color: #001923;
+
+    }
+
+
+    /* CONTACTO */
+
+    .contact-box {
+
+      margin: 35px auto 0;
+
+      max-width: 700px;
+
+    }
+
+
+    .contact-item {
+
+      margin: 20px 0;
+
+      font-size: 21px;
+
+    }
+
+
+    /* BOTÓN MAPA */
+
+    .mapa {
+
+      display: inline-block;
+
+      margin-top: 20px;
+
+      padding: 15px 35px;
+
+      background: #001923;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 4px;
+
+      font-size: 19px;
+
+      transition: 0.3s;
+
+    }
+
+
+    .mapa:hover {
+
+      background: #183b46;
+
+    }
+
+
+    /* BOTONES TELÉFONO Y WHATSAPP */
+
+    .contact-buttons {
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      gap: 15px;
+
+      margin-top: 20px;
+
+      flex-wrap: wrap;
+
+    }
+
 
     .boton-telefono {
+
+      display: inline-block;
+
+      padding: 15px 25px;
+
       background: #001923;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 4px;
+
+      font-size: 18px;
+
+      transition: 0.3s;
+
     }
+
 
     .boton-telefono:hover {
-      background: #123440;
+
+      background: #183b46;
+
     }
+
 
     .boton-whatsapp {
+
+      display: inline-block;
+
+      padding: 15px 25px;
+
       background: #25D366;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 4px;
+
+      font-size: 18px;
+
+      transition: 0.3s;
+
     }
+
 
     .boton-whatsapp:hover {
+
       background: #1ebe5d;
+
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+
+    /* PIE */
 
     footer {
+
       background: #001923;
+
       color: white;
-      padding: 45px 20px;
+
       text-align: center;
+
+      padding: 40px 20px;
+
     }
 
-    .footer-contenido {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 30px;
+
+    footer p {
+
+      margin: 5px;
+
     }
 
-    .footer-texto {
-      text-align: left;
-    }
-
-    .footer-texto p {
-      margin: 5px 0;
-    }
-
-    .footer-texto strong {
-      font-size: 22px;
-    }
 
     .footer-social {
+
       display: flex;
-      align-items: center;
+
+      justify-content: center;
+
       gap: 15px;
+
+      margin: 25px 0;
+
     }
+
 
     .footer-social a {
-      width: 45px;
-      height: 45px;
-      background: white;
-      border-radius: 5px;
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
-      text-decoration: none;
+
+      width: 45px;
+
+      height: 45px;
+
+      background: white;
+
+      border-radius: 5px;
+
       transition: 0.3s;
+
     }
+
 
     .footer-social a:hover {
-      transform: scale(1.08);
+
+      transform: translateY(-3px);
+
     }
+
 
     .footer-social img {
+
       width: 25px;
+
       height: 25px;
+
       object-fit: contain;
+
     }
 
-    /* =========================
-       WHATSAPP FLOTANTE
-       SOLO MÓVIL
-    ========================= */
+
+    /* WHATSAPP FLOTANTE */
 
     .whatsapp-flotante {
-      display: none;
+
+      position: fixed;
+
+      right: 20px;
+
+      bottom: 20px;
+
+      z-index: 9999;
+
+      width: 60px;
+
+      height: 60px;
+
+      background: #25D366;
+
+      color: white;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-decoration: none;
+
+      font-size: 30px;
+
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+      transition: 0.3s;
+
     }
 
-    /* =========================
-       MÓVIL
-    ========================= */
+
+    .whatsapp-flotante:hover {
+
+      transform: scale(1.08);
+
+      background: #1ebe5d;
+
+    }
+
+
+    /* MÓVIL */
 
     @media (max-width: 900px) {
 
+
       header {
+
         height: auto;
-        min-height: 100px;
-        padding: 15px 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+
       }
 
-      .logo img {
-        height: 70px;
+
+      .logo {
+
+        display: none;
+
       }
+
 
       nav {
-        width: 100%;
-        justify-content: center;
-        gap: 18px;
+
+        gap: 20px;
+
         flex-wrap: wrap;
+
+        justify-content: center;
+
       }
+
 
       nav a {
-        font-size: 13px;
+
+        font-size: 16px;
+
       }
 
-      .redes-header {
+
+      .social {
+
         display: none;
+
       }
+
 
       .hero {
-        min-height: 550px;
-        padding: 30px 20px;
+
+        width: 100%;
+
+        height: 180px;
+
+        padding: 10px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
       }
+
 
       .hero h1 {
-        font-size: 34px;
+
+        font-size: 18px;
+
+        line-height: 1.2;
+
+        margin-bottom: 8px;
+
       }
 
+
       .hero p {
-        font-size: 20px;
+
+        font-size: 15px;
+
+        line-height: 1.3;
+
+        margin: 0 auto;
+
       }
+
 
       section {
-        padding: 60px 15px;
+
+        padding: 55px 20px;
+
       }
 
-      h2 {
+
+      section h2 {
+
         font-size: 30px;
+
       }
 
-      .platos {
-        grid-template-columns: 1fr;
-        gap: 25px;
+
+      section p {
+
+        font-size: 17px;
+
       }
 
-      .plato img {
-        height: 250px;
-      }
-
-      .footer-contenido {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .footer-texto {
-        text-align: center;
-      }
-
-      .footer-social {
-        justify-content: center;
-      }
-
-      /* WhatsApp flotante SOLO EN MÓVIL */
-      .whatsapp-flotante {
-        display: flex;
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-        z-index: 9999;
-        width: 60px;
-        height: 60px;
-        background: #25D366;
-        color: white;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        font-size: 30px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-      }
-
-      .whatsapp-flotante:hover {
-        background: #1ebe5d;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .hero h1 {
-        font-size: 28px;
-      }
-
-      .hero p {
-        font-size: 18px;
-      }
-
-      h2 {
-        font-size: 27px;
-      }
 
       .intro > p {
+
         font-size: 17px;
+
+        line-height: 1.7;
+
       }
 
-      .plato h3 {
-        font-size: 21px;
+
+      .dishes {
+
+        grid-template-columns: 1fr;
+
+        margin-left: 0;
+
+        margin-right: 0;
+
       }
 
-      .plato p {
-        font-size: 16px;
+
+      .dish img {
+
+        height: 240px;
+
       }
 
-      .botones-contacto {
+
+      .contact-buttons {
+
         flex-direction: column;
+
       }
+
 
       .boton-telefono,
       .boton-whatsapp {
+
         width: 100%;
+
         max-width: 320px;
+
       }
 
-      .footer-texto strong {
-        font-size: 20px;
+
+      .whatsapp-flotante {
+
+        width: 55px;
+
+        height: 55px;
+
+        right: 15px;
+
+        bottom: 15px;
+
+        font-size: 27px;
+
       }
 
     }
 
   </style>
+
 </head>
+
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+
+  <!-- CABECERA -->
 
   <header>
 
-    <a href="#inicio" class="logo" aria-label="COCINAMER">
+
+    <a href="#inicio" class="logo">
+
       <img
         src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/a72fd5854b8670d0783c432f818fc2f00c1bacb5/Foto%20logo.jpeg"
         alt="COCINAMER">
+
     </a>
 
+
     <nav>
-      <a href="#inicio">INICIO</a>
-      <a href="#menu">MENÚ</a>
-      <a href="#tarifa">TARIFA</a>
-      <a href="#raciones">RACIONES</a>
-      <a href="#contacto">CONTACTO</a>
+
+      <a href="#inicio">Inicio</a>
+
+      <a href="#menu">Menú</a>
+
+      <a href="#tarifa">Tarifa</a>
+
+      <a href="#raciones">Raciones</a>
+
+      <a href="#contacto">Contacto</a>
+
     </nav>
 
-    <div class="redes-header">
+
+    <div class="social">
+
 
       <a
         href="https://www.facebook.com/people/Cocina-Mer/61550505420325/#"
@@ -577,6 +986,7 @@
 
       </a>
 
+
       <a
         href="https://www.instagram.com/cocina_mer/"
         target="_blank"
@@ -589,346 +999,401 @@
 
       </a>
 
+
     </div>
+
 
   </header>
 
 
-  <!-- =========================
-       INICIO
-  ========================= -->
+  <!-- PORTADA -->
 
-  <section id="inicio" class="hero">
+  <section class="hero" id="inicio">
 
-    <div class="hero-contenido">
+    <div>
 
-      <h1>
-        <strong>PLATOS CASEROS ELABORADOS DIARIAMENTE</strong>
-      </h1>
+      <h1>PLATOS CASEROS ELABORADOS DIARIAMENTE</h1>
 
-      <p>
-        No renuncies a comer bien por falta de tiempo
-      </p>
+      <p>No renuncies a comer bien por falta de tiempo</p>
 
     </div>
 
   </section>
 
 
-  <!-- =========================
-       INTRODUCCIÓN
-  ========================= -->
+  <!-- PRESENTACIÓN -->
 
-  <section>
+  <section class="intro">
 
-    <div class="contenedor">
 
-      <div class="intro">
+    <h2>¿Qué es COCINAMER?</h2>
+
+
+    <p>
+
+      COCINAMER es una empresa de menús diarios y elaboración de
+      raciones caracterizada por la elaboración propia, con un
+      fantástico sabor tradicional y casero,
+      sin el uso de aditivos ni conservantes.
+
+    </p>
+
+
+    <p>
+
+      Toda nuestra carta está elaborada con
+      productos de primera calidad, frescos, naturales
+      y de temporada, y con un gran control de calidad.
+
+    </p>
+
+
+    <h2>¿Cómo funciona COCINAMER?</h2>
+
+
+    <p>
+
+      COCINAMER realiza entregas diarias a domicilio,
+      el día y a la dirección que nos indiques, tendrás que
+      guardar los envases en el refrigerador y cuando quieras comer
+      sólo tienes que emplatar y calentar en el microondas, por un
+      tiempo inferior a 2 minutos y listo para comer.
+
+    </p>
+
+
+    <p>
+
+      Para poder comprar menús diarios, tendrás que llamar al teléfono
+      636 72 19 87, facilitando nombre, dirección, teléfono, forma de
+      pago y plan escogido.
+
+      También tienes la posibilidad de elegir entre una variedad de
+      platos diarios preparados o raciones avisando con suficiente
+      antelación.
+
+    </p>
+
+
+    <p>
+
+      Los precios de los que disponemos son variables conforme los días
+      y semanas que elijas, puedes comprobarlos en la página web,
+      donde se detallan todas las combinaciones posibles.
+
+    </p>
+
+
+    <!-- PASOS -->
+
+    <div class="steps">
+
+
+      <div class="step">
+
+        <div class="number">1</div>
+
+        <h3>Elige</h3>
 
         <p>
-          En COCINAMER elaboramos comida casera diariamente,
-          utilizando ingredientes seleccionados y recetas tradicionales.
-        </p>
-
-        <p>
-          Nuestro objetivo es que puedas disfrutar de una comida
-          rica, variada y preparada con cariño sin tener que cocinar.
-        </p>
-
-        <p>
-          Repartimos nuestros platos a domicilio en Almendralejo.
+          Lee las diferentes opciones y elige la que mejor se adapte a ti.
         </p>
 
       </div>
 
+
+      <div class="step">
+
+        <div class="number">2</div>
+
+        <h3>Pide</h3>
+
+        <p>
+          Indica tu dirección y a la hora indicada lo tendrás en tu casa.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="number">3</div>
+
+        <h3>Recibe</h3>
+
+        <p>
+          ¡Listo para comer! Ahora sólo queda sentarse a la mesa y disfrutar.
+        </p>
+
+      </div>
+
+
     </div>
+
 
   </section>
 
 
-  <!-- =========================
-       MENÚ
-  ========================= -->
+  <!-- MENÚ -->
 
   <section id="menu">
 
-    <div class="contenedor">
 
-      <h2>Nuestro menú</h2>
+    <img
+      class="menu-imagen"
+      src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/1f967a9cbce99c6fe79eebf2daac847d8606d3f7/Diapositiva1.PNG"
+      alt="Menú COCINAMER">
 
-      <img
-        class="menu-imagen"
-        src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/1f967a9cbce99c6fe79eebf2daac847d8606d3f7/Diapositiva1.PNG"
-        alt="Menú COCINAMER"
-        loading="lazy">
-
-    </div>
 
   </section>
 
 
-  <!-- =========================
-       PLATOS
-  ========================= -->
-
-  <section>
-
-    <div class="contenedor">
-
-      <h2>Algunos de nuestros platos</h2>
-
-      <div class="platos">
-
-        <article class="plato">
-
-          <img
-            src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/d0127ce4f13a92214077c18da874ccbaa0a0fdba/Comida%203.jpg"
-            alt="Plato casero COCINAMER"
-            loading="lazy">
-
-          <div class="plato-contenido">
-
-            <h3>Comida casera</h3>
-
-            <p>
-              Platos elaborados diariamente con sabor tradicional
-              y productos seleccionados.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="plato">
-
-          <img
-            src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/a4d1003b4166d06050a37c818bfd4ff41d86b031/Comida%202.jpg"
-            alt="Plato casero COCINAMER"
-            loading="lazy">
-
-          <div class="plato-contenido">
-
-            <h3>Sabor tradicional</h3>
-
-            <p>
-              Recetas de siempre preparadas con el cariño
-              de la cocina casera.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="plato">
-
-          <img
-            src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/b922307855f3d196905b3c4111589fadf7f44ef4/Comida%204.jpg"
-            alt="Plato casero COCINAMER"
-            loading="lazy">
-
-          <div class="plato-contenido">
-
-            <h3>Comida preparada</h3>
-
-            <p>
-              Una opción cómoda para disfrutar de una buena comida
-              sin tener que cocinar.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="plato">
-
-          <img
-            src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/b0da86ffa5d44299a7eb073877765d1b22576c46/Comida%201.jpg"
-            alt="Plato casero COCINAMER"
-            loading="lazy">
-
-          <div class="plato-contenido">
-
-            <h3>Hecho cada día</h3>
-
-            <p>
-              Elaboramos nuestros platos diariamente para que
-              puedas disfrutar de comida recién preparada.
-            </p>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       TARIFA
-  ========================= -->
+  <!-- TARIFA -->
 
   <section id="tarifa">
 
-    <div class="contenedor">
 
-      <h2>Tarifa</h2>
+    <img
+      class="tarifa-imagen"
+      src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/7e7cdb1c2d1714af4d6b2f8f2763388265cba2f8/Precios.png"
+      alt="Tarifas COCINAMER">
 
-      <img
-        class="tarifa-imagen"
-        src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/7e7cdb1c2d1714af4d6b2f8f2763388265cba2f8/Precios.png"
-        alt="Tarifa COCINAMER"
-        loading="lazy">
-
-    </div>
 
   </section>
 
 
-  <!-- =========================
-       RACIONES
-  ========================= -->
+  <!-- RACIONES -->
 
   <section id="raciones">
 
-    <div class="contenedor">
 
-      <h2>Raciones</h2>
+    <h2>Raciones</h2>
 
-      <img
-        class="raciones-imagen"
-        src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/6f9b987548c52601713c8e8c017dc275814ad4f6/Raciones.png"
-        alt="Raciones COCINAMER"
-        loading="lazy">
+
+    <img
+      class="raciones-imagen"
+      src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/6f9b987548c52601713c8e8c017dc275814ad4f6/Raciones.png"
+      alt="Raciones COCINAMER">
+
+
+    <div class="dishes">
+
+
+      <div class="dish">
+
+        <img
+          src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/d0127ce4f13a92214077c18da874ccbaa0a0fdba/Comida%203.jpg"
+          alt="Plato de comida casera">
+
+        <h3>COMIDA CASERA</h3>
+
+        <p>
+          Entregas diarias de platos preparados sin conservantes
+          para hacerte disfrutar cada día de forma rápida y sencilla.
+        </p>
+
+      </div>
+
+
+      <div class="dish">
+
+        <img
+          src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/a4d1003b4166d06050a37c818bfd4ff41d86b031/Comida%202.jpg"
+          alt="Comida saludable">
+
+        <h3>INGREDIENTES NATURALES Y DE TEMPORADA</h3>
+
+        <p>
+          Se emplean alimentos frescos y de primera calidad para
+          ofrecerte la mejor comida casera a domicilio para todo el año.
+        </p>
+
+      </div>
+
+
+      <div class="dish">
+
+        <img
+          src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/b922307855f3d196905b3c4111589fadf7f44ef4/Comida%204.jpg"
+          alt="Comida preparada">
+
+        <h3>CON TODAS LAS MEDIDAS DE SEGURIDAD</h3>
+
+        <p>
+          Hemos implantado todas las recomendaciones necesarias
+          para garantizar un entorno seguro.
+        </p>
+
+      </div>
+
+
+      <div class="dish">
+
+        <img
+          src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/b0da86ffa5d44299a7eb073877765d1b22576c46/Comida%201.jpg"
+          alt="Plato de comida casera">
+
+        <h3>IDEAL PARA PERSONAS MAYORES</h3>
+
+        <p>
+          100 % artesanal y tradicional ideal para personas mayores.
+        </p>
+
+      </div>
+
 
     </div>
+
 
   </section>
 
 
-  <!-- =========================
-       CONTACTO
-  ========================= -->
+  <!-- CONTACTO -->
 
   <section id="contacto">
 
-    <div class="contenedor">
 
-      <h2>Contacto</h2>
+    <h2>Contacto</h2>
 
-      <div class="contacto-info">
 
-        <p>
-          📍
-          <a
-            href="https://maps.app.goo.gl/RVkX5hUAtgtCSnzL6"
-            target="_blank"
-            rel="noopener">
-            Calle Méndez Núñez nº 13, Almendralejo
-          </a>
-        </p>
+    <p>
 
-        <p>
-          📞
-          <a href="tel:+34636721987">
-            636 721 987
-          </a>
-        </p>
+      ¿Quieres hacer un pedido o tienes alguna pregunta?
+      Ponte en contacto con nosotros.
 
-        <div class="botones-contacto">
+    </p>
 
-          <a
-            class="boton-telefono"
-            href="tel:+34636721987">
-            📞 Llamar por teléfono
-          </a>
 
-          <a
-            class="boton-whatsapp"
-            href="https://wa.me/34636721987"
-            target="_blank"
-            rel="noopener">
-            💬 Hablar por WhatsApp
-          </a>
+    <div class="contact-box">
 
-        </div>
+
+      <div class="contact-item">
+
+        📍 <strong>Dirección:</strong>
+
+        <br>
+
+        Calle Méndez Núñez nº 13, Almendralejo
+
+        <br>
+
+
+        <a
+          class="mapa"
+          href="https://maps.app.goo.gl/RVkX5hUAtgtCSnzL6"
+          target="_blank"
+          rel="noopener">
+
+          Cómo llegar
+
+        </a>
 
       </div>
 
+
+      <div class="contact-item">
+
+        📞 <strong>Teléfono:</strong> 636 721 987
+
+      </div>
+
+
+      <!-- BOTONES -->
+
+      <div class="contact-buttons">
+
+
+        <a
+          class="boton-telefono"
+          href="tel:+34636721987">
+
+          📞 Llamar por teléfono
+
+        </a>
+
+
+        <a
+          class="boton-whatsapp"
+          href="https://wa.me/34636721987"
+          target="_blank"
+          rel="noopener">
+
+          💬 Hablar por WhatsApp
+
+        </a>
+
+
+      </div>
+
+
     </div>
+
 
   </section>
 
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+  <!-- PIE -->
 
   <footer>
 
-    <div class="footer-contenido">
 
-      <div class="footer-texto">
+    <p>
 
-        <p>
-          <strong>SABOR CASERO</strong>
-        </p>
+      <strong>SABOR CASERO</strong>
 
-        <p>
-          Comida casera elaborada diariamente
-        </p>
-
-      </div>
+    </p>
 
 
-      <div class="footer-social">
+    <p>
 
-        <a
-          href="https://www.facebook.com/people/Cocina-Mer/61550505420325/#"
-          target="_blank"
-          rel="noopener"
-          aria-label="Facebook">
+      Comida casera elaborada diariamente
 
-          <img
-            src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/d45e8966970aa24ebee8526afa0783fb26a5c4de/facebook.png"
-            alt="Facebook">
-
-        </a>
+    </p>
 
 
-        <a
-          href="https://www.instagram.com/cocina_mer/"
-          target="_blank"
-          rel="noopener"
-          aria-label="Instagram">
+    <div class="footer-social">
 
-          <img
-            src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/8fd8265eee9b58c918fa5027df46cc37115f8431/instagram-new.jpg"
-            alt="Instagram">
 
-        </a>
+      <a
+        href="https://www.facebook.com/people/Cocina-Mer/61550505420325/#"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook">
 
-      </div>
+        <img
+          src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/d45e8966970aa24ebee8526afa0783fb26a5c4de/facebook.png"
+          alt="Facebook">
+
+      </a>
+
+
+      <a
+        href="https://www.instagram.com/cocina_mer/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram">
+
+        <img
+          src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/8fd8265eee9b58c918fa5027df46cc37115f8431/instagram-new.jpg"
+          alt="Instagram">
+
+      </a>
+
 
     </div>
 
 
-    <p style="margin-top:25px;">
+    <p>
+
       © 2026 COCINAMER | Todos los derechos reservados
+
     </p>
+
 
   </footer>
 
 
-  <!-- =========================
-       WHATSAPP FLOTANTE
-       SOLO EN MÓVIL
-  ========================= -->
+  <!-- WHATSAPP FLOTANTE -->
 
   <a
     class="whatsapp-flotante"
@@ -936,8 +1401,12 @@
     target="_blank"
     rel="noopener"
     aria-label="Hablar por WhatsApp">
+
     💬
+
   </a>
 
+
 </body>
+
 </html>
