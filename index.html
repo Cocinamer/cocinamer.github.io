@@ -763,6 +763,50 @@
     .whatsapp-flotante {
   display: none;
 }
+    .footer-contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-texto {
+  text-align: left;
+}
+
+.footer-texto p {
+  margin: 5px 0;
+}
+
+.footer-texto strong {
+  font-size: 22px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social a {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-social img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
 
     /* MÓVIL */
 
@@ -785,7 +829,16 @@
     font-size: 30px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   }
+       .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .footer-texto {
+    text-align: center;
+  }
+
+}
       header {
 
         height: auto;
@@ -1353,25 +1406,23 @@
 
   <!-- PIE -->
 
-  <footer>
+ <footer>
 
+  <div class="footer-contenido">
 
-    <p>
+    <div class="footer-texto">
 
-      <strong>SABOR CASERO</strong>
+      <p>
+        <strong>SABOR CASERO</strong>
+      </p>
 
-    </p>
+      <p>
+        Comida casera elaborada diariamente
+      </p>
 
-
-    <p>
-
-      Comida casera elaborada diariamente
-
-    </p>
-
+    </div>
 
     <div class="footer-social">
-
 
       <a
         href="https://www.facebook.com/people/Cocina-Mer/61550505420325/#"
@@ -1385,7 +1436,6 @@
 
       </a>
 
-
       <a
         href="https://www.instagram.com/cocina_mer/"
         target="_blank"
@@ -1398,18 +1448,15 @@
 
       </a>
 
-
     </div>
 
+  </div>
 
-    <p>
+  <p style="margin-top:25px;">
+    © 2026 COCINAMER | Todos los derechos reservados
+  </p>
 
-      © 2026 COCINAMER | Todos los derechos reservados
-
-    </p>
-
-
-  </footer>
+</footer>
 
 
   <!-- WHATSAPP FLOTANTE -->
