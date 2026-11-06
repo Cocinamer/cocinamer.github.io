@@ -424,7 +424,46 @@ section p {
   color: #01121d;
 }
 
+/* =================================================
+   ESPECIAL NAVIDAD
+   ================================================= */
 
+#navidad {
+  background: #f5f3ee;
+  padding: 60px 15%;
+}
+
+#navidad h2 {
+  color: #01121d;
+  margin-bottom: 20px;
+}
+
+#navidad p {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.navidad-imagen {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 35px auto 0;
+  border-radius: 5px;
+}
+
+/* NAVIDAD EN MÓVILES */
+
+@media (max-width: 900px) {
+  #navidad {
+    padding: 55px 20px;
+  }
+
+  #navidad p {
+    font-size: 17px;
+  }
+}
 /* =================================================
    CONTACTO
    ================================================= */
@@ -974,6 +1013,8 @@ footer p {
 
     <a href="#raciones">Raciones</a>
 
+    <a href="#navidad">Navidad</a>
+
     <a href="#contacto">Contacto</a>
 
   </nav>
@@ -1036,6 +1077,8 @@ footer p {
 
   <a href="#raciones" onclick="document.querySelector('.menu-movil').classList.remove('activo')">Raciones</a>
 
+  <a href="#navidad" onclick="document.querySelector('.menu-movil').classList.remove('activo')">Navidad</a>
+    
   <a href="#contacto" onclick="document.querySelector('.menu-movil').classList.remove('activo')">Contacto</a>
 
 </nav>
@@ -1278,7 +1321,27 @@ footer p {
 
 </section>
 
+<!-- =================================================
+     ESPECIAL NAVIDAD
+     ================================================= -->
 
+<section id="navidad">
+
+  <h2>
+    Especial Navidad
+  </h2>
+
+  <p>
+    Celebra estas fiestas con nuestra selección de platos especiales.
+    Consulta aquí la carta de Navidad de COCINAMER.
+  </p>
+
+  <img
+    class="navidad-imagen"
+    src="URL_DE_TU_FOTO_DE_NAVIDAD"
+    alt="Carta especial de Navidad de COCINAMER en Almendralejo">
+
+</section>
 
 <!-- =================================================
      CONTACTO
