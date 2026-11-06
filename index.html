@@ -193,29 +193,28 @@ nav a:hover {
 .cabecera-navidad {
   width: 100%;
   height: 180px;
-  min-height: 180px;
-
-  background-image:
-    linear-gradient(
-      rgba(0,0,0,.30),
-      rgba(0,0,0,.30)
-    ),
-    <img
-      src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/121447587461db68cda49de16e7e6a7a0e86d61f/Banner%20navide%C3%B1o%20con%20ramas%20y%20luces%20bokeh.png"
-      alt="COCINAMER">
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
 
-  padding: 20px;
+.imagen-navidad {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
 }
 
 .texto-navidad {
+  position: relative;
+  z-index: 1;
   color: white;
   text-shadow: 2px 2px 5px #000;
 }
@@ -232,6 +231,20 @@ nav a:hover {
   font-size: 24px;
   font-style: italic;
   margin: 4px 0 0;
+}
+
+@media (max-width: 900px) {
+  .cabecera-navidad {
+    height: 145px;
+  }
+
+  .texto-navidad h1 {
+    font-size: 29px;
+  }
+
+  .texto-navidad p {
+    font-size: 20px;
+  }
 }
 
 /* MÓVIL */
@@ -1117,12 +1130,14 @@ footer p {
 
 <section class="cabecera-navidad" id="inicio">
 
+  <img
+    src="https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/121447587461db68cda49de16e7e6a7a0e86d61f/Banner%20navide%C3%B1o%20con%20ramas%20y%20luces%20bokeh.png"
+    alt="Especial Navidad COCINAMER"
+    class="imagen-navidad">
+
   <div class="texto-navidad">
-
     <h1>Especial Navidad</h1>
-
-    <p>Consulta la nueva carta</p>
-
+    <p>Consulta nuestra carta especial navidad</p>
   </div>
 
 </section>
