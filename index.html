@@ -187,20 +187,20 @@ nav a:hover {
 
 
 /* =================================================
-   PORTADA
+   PORTADA ESPECIAL NAVIDAD
    ================================================= */
 
-.hero {
+.cabecera-navidad {
   width: 100%;
   height: 180px;
   min-height: 180px;
 
   background-image:
     linear-gradient(
-      rgba(255,255,255,.25),
-      rgba(255,255,255,.25)
+      rgba(0,0,0,.30),
+      rgba(0,0,0,.30)
     ),
-    url("https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/46f62bbd59e93ca96913ce768bfab638b6323256/Banner%20principal.png");
+    url("https://raw.githubusercontent.com/Cocinamer/cocinamer.github.io/121447587461db68cda49de16e7e6a7a0e86d61f/Banner%20navide%C3%B1o%20con%20ramas%20y%20luces%20bokeh.png");
 
   background-position: center;
   background-size: cover;
@@ -209,22 +209,45 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
 
-  padding: 40px 20px;
+  padding: 20px;
 }
 
-.hero h1 {
-  font-size: 35px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+.texto-navidad {
+  color: white;
+  text-shadow: 2px 2px 5px #000;
 }
 
-.hero p {
-  font-size: 25px;
-  font-weight: 500;
+.texto-navidad h1 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.texto-navidad p {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-style: italic;
+  margin: 4px 0 0;
+}
+
+/* MÓVIL */
+
+@media (max-width: 900px) {
+  .cabecera-navidad {
+    min-height: 145px;
+    height: 145px;
+  }
+
+  .texto-navidad h1 {
+    font-size: 29px;
+  }
+
+  .texto-navidad p {
+    font-size: 20px;
+  }
 }
 
 
@@ -1091,17 +1114,13 @@ footer p {
      PORTADA
      ================================================= -->
 
-<section class="hero" id="inicio">
+<section class="cabecera-navidad" id="inicio">
 
-  <div>
+  <div class="texto-navidad">
 
-    <h1>
-      <strong>PLATOS CASEROS ELABORADOS DIARIAMENTE</strong>
-    </h1>
+    <h1>Especial Navidad</h1>
 
-    <p>
-      No renuncies a comer bien por falta de tiempo
-    </p>
+    <p>Consulta la nueva carta</p>
 
   </div>
 
